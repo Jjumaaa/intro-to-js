@@ -29,3 +29,10 @@
 
 
 // How functions can return other functions
+
+
+const arr = [1, 2, 3].map((num) =>
+	console.log('The current element is: ', num)
+);
+
+console.log(arr);
