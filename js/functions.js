@@ -1,9 +1,24 @@
 // Define a function using the function keyword
+const person = "Me";
 
+function identifyTheUser(name = 'Instagrammer') {
+	console.log(`Good Morning, ${name}!`);
+}
 
+identifyTheUser('Bob');
+identifyTheUser('Mercy');
+identifyTheUser('');
+identifyTheUser('Sarah')
 // Call a function
 
+const identifyTheUserAgain = (name = 'Tiktoker') => {
+	console.log(`Good Morning, ${name}!`);
+	return name
+};
+const huyuNiNani = identifyTheUserAgain('Ajib');
 
+identifyTheUserAgain('Ajib');
+console.log(huyuNiNani);
 // Define an arrow function
 
 
@@ -29,10 +44,3 @@
 
 
 // How functions can return other functions
-
-
-const arr = [1, 2, 3].map((num) =>
-	console.log('The current element is: ', num)
-);
-
-console.log(arr);
